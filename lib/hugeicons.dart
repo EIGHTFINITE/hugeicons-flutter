@@ -1,11 +1,5 @@
-library hugeicons;
-
 import 'package:flutter/widgets.dart';
 
-/// A collection of stroke-rounded icons for use in Flutter applications.
-///
-/// The [HugeIcons] class provides a comprehensive set of stroke-rounded icons
-/// for enhancing the UI design of your Flutter applications.
 class HugeIcons {
   HugeIcons._();
 
@@ -16514,37 +16508,4 @@ class HugeIcons {
   /// IconData for the 'strokeRoundedZoom' icon.
   static const IconData strokeRoundedZoom =
       IconData(0x4aba, fontFamily: 'HgiStrokeRounded', fontPackage: _kFontPkg);
-}
-
-/// A widget that displays an icon.
-class HugeIcon extends StatelessWidget {
-  /// The icon data to display.
-  final IconData icon;
-
-  /// The color to use when drawing the icon.
-  final Color color;
-
-  /// The size of the icon in logical pixels.
-  final double size;
-
-  /// Creates a new [HugeIcon] widget.
-  ///
-  /// The [icon] parameter must be specified.
-  /// The [color] parameter specifies the color to use when drawing the icon.
-  /// The [size] parameter specifies the size of the icon in logical pixels.
-  const HugeIcon({
-    super.key,
-    required this.icon,
-    required this.color,
-    this.size = 24.0,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Icon(
-      icon,
-      color: color,
-      size: size,
-    );
-  }
 }
