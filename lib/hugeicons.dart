@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
-class HugeIcons {
-  HugeIcons._();
+@staticIconProvider
+abstract final class HugeIcons {
 
   static const _kFontPkg = 'hugeicons';
 
